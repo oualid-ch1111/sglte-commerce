@@ -1,0 +1,35 @@
+{
+  "name": "sglt-ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.6",
+    "aos": "^2.3.4",
+    "autoprefixer": "10.4.14",
+    "bootstrap": "^5.3.1",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.7.0",
+    "js-cookie": "^3.0.5",
+    "next": "13.4.13",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
+    "smoothscroll-polyfill": "^0.4.4",
+    "tailwindcss": "3.3.3",
+    "typeface-roboto": "^1.1.13",
+    "vegas": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.19",
+    "@types/react-dom": "^18.2.7"
+  }
+}

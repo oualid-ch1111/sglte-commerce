@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply m-0 p-0 font-sans;
+}
+
+a {
+  @apply text-current no-underline;
+}
+
+* {
+  @apply box-border;
+}
+
+.card {
+  @apply bg-white shadow-2xl  rounded-lg overflow-hidden transform transition-all duration-500 ease-in-out hover:scale-105 box-border;
+  box-shadow: 0 4px 6px rgba(19, 17, 17, 0.6);
+}
+
+.primary-button {
+  @apply bg-green-500 text-white text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 transition-all duration-500 ease-in-out;
+}
+
+.nav-link {
+  @apply p-2 text-gray-500 hover:text-green-600;
+}
+
+.nav-link-active {
+  @apply p-2 text-green-600;
+}
+
+.footer {
+  @apply bg-gray-100 py-4 px-8 text-center text-sm text-gray-500;
+}
+.center-container {
+  @apply flex  h-screen justify-center items-center;
+}
+
+.auth-container {
+  @apply bg-white p-10 rounded-lg shadow-xl w-96  transform transition-all duration-500 ease-in-out opacity-0 scale-90;
+  animation: fadeIn 0.5s forwards 0.5s;
+  visibility: hidden; /* ajoutez cette ligne */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.input-label {
+  @apply block mb-2 text-sm text-gray-600;
+}
+
+.input-field {
+  @apply w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:border-blue-400 transition-all duration-300;
+}
+
+.auth-button {
+  @apply bg-blue-500 text-white w-full py-2 rounded-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-all duration-300;
+}
+
+.link-hover:hover {
+  @apply underline;
+}
